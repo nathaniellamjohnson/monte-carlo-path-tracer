@@ -159,10 +159,10 @@ vec3 Render_World::Cast_Ray(const Ray& ray, int recursion_depth)
     vec3 wo = -ray.direction; // pointing towards camera    
 
     // flip normal if inside / outside 
-    if(dot(normal_at_intersection_point, wo) < 0)
-    {
-        normal_at_intersection_point = -normal_at_intersection_point;
-    }
+    //if(dot(normal_at_intersection_point, wo) < 0)
+    //{
+    //    normal_at_intersection_point = -normal_at_intersection_point;
+    //}
 
     vec3 caustic_irradiance(0.0, 0.0, 0.0);
     if (enable_caustics)
