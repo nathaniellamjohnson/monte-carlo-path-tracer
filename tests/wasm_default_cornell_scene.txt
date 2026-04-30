@@ -41,9 +41,10 @@ color red 0.75 0.1 0.1
 color green 0.1 0.75 0.1
 color white 0.78 0.78 0.78
 color blue 0.1 0.1 0.75
+color yellow 1.0 0.9176 0.0
 color light_color 1.3 1.3 1.3
 color diffuse_gray 0.62 0.62 0.62
-color glass_tint 0.9 0.95 1.0
+color glass_tint 0.9 0.9 1.0
 
 ### Shaders ###
 # Cornell wall materials
@@ -51,6 +52,7 @@ phong_shader red_wall red red white 8
 phong_shader green_wall green green white 8
 phong_shader white_wall white white white 8
 phong_shader blue_wall blue blue white 8
+phong_shader yellow_wall yellow yellow white 8
 
 # One true diffuse ball material
 phong_shader diffuse_ball diffuse_gray diffuse_gray white 4
@@ -67,8 +69,8 @@ plane -1 0 0 1 0 0 red_wall
 plane 1 0 0 -1 0 0 green_wall
 plane 0 -1 0 0 1 0 white_wall
 plane 0 1 0 0 -1 0 top_emissive
-plane 0 0 -1 0 0 1 blue_wall
-plane 0 0 4 0 0 -1 white_wall
+plane 0 0 -2.5 0 0 1 blue_wall
+plane 0 0 4 0 0 -1 yellow_wall
 
 ### Geometry: Inner Objects ###
 # left = mirror, center = diffuse, right = glass
