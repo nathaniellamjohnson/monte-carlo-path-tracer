@@ -1,5 +1,4 @@
-# 580 Project Work
-
+# Monte Carlo Path Tracer && Caustics Only Photon Mapping
 
 
 - Render Command 
