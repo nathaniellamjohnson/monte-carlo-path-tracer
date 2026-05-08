@@ -1,6 +1,4 @@
-# 580 Project Work
-
-
+# Monte Carlo Path Tracer & Photon Mapping for Global Illumination & Caustics
 
 ## Quick Start
 
